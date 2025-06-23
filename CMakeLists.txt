@@ -19,6 +19,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include
 add_executable(kcp_chat_server 
                 src/server/ChatServer.cpp
                 src/common/NetworkTransport.cpp
+                third_party/kcp/ikcp.c
                 )
 
 target_link_libraries(kcp_chat_server kcp pthread)

@@ -4,7 +4,7 @@
 
 using namespace std;
 int main(){
-    cout << "chat server starting" << endl;
-    cout << "char server ending" << endl;
+    cout << "chat server starting..." << endl;
+    cout << "char server ending..." << endl;
     return 0;
 }

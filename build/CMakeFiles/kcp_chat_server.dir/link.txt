@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o  -o bin/kcp_chat_server libkcp.a -lpthread 
+/usr/bin/c++     CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o  -o bin/kcp_chat_server libkcp.a -lpthread 

@@ -210,6 +210,7 @@ third_party/kcp/ikcp.o: third_party/kcp/ikcp.c.o
 # target to build an object file
 third_party/kcp/ikcp.c.o:
 	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o
 .PHONY : third_party/kcp/ikcp.c.o
 
 third_party/kcp/ikcp.i: third_party/kcp/ikcp.c.i
@@ -219,6 +220,7 @@ third_party/kcp/ikcp.i: third_party/kcp/ikcp.c.i
 # target to preprocess a source file
 third_party/kcp/ikcp.c.i:
 	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i
 .PHONY : third_party/kcp/ikcp.c.i
 
 third_party/kcp/ikcp.s: third_party/kcp/ikcp.c.s
@@ -228,6 +230,7 @@ third_party/kcp/ikcp.s: third_party/kcp/ikcp.c.s
 # target to generate assembly for a file
 third_party/kcp/ikcp.c.s:
 	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s
 .PHONY : third_party/kcp/ikcp.c.s
 
 # Help Target
