@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/common/NetworkTransport.hpp
+
+../include/server/ChatServer.hpp
+
+/home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp
+NetworkTransport.hpp
+/home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.hpp
+
+/home/zhuzewen/share/KCP_Project/src/server/ChatServer.cpp
+ChatServer.hpp
+/home/zhuzewen/share/KCP_Project/src/server/ChatServer.hpp
+NetworkTransport.hpp
+/home/zhuzewen/share/KCP_Project/src/server/NetworkTransport.hpp
+iostream
+-
+
