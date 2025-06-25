@@ -7,8 +7,34 @@
 #IncludeRegexTransform: 
 
 ../include/common/NetworkTransport.hpp
+vector
+-
+cstdint
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+unistd.h
+-
+cstring
+-
+utility
+-
+iostream
+-
+string
+-
 
 ../include/server/ChatServer.hpp
+NetworkTransport.hpp
+../include/server/NetworkTransport.hpp
+memory
+-
+thread
+-
 
 /home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp
 NetworkTransport.hpp
@@ -20,5 +46,9 @@ ChatServer.hpp
 NetworkTransport.hpp
 /home/zhuzewen/share/KCP_Project/src/server/NetworkTransport.hpp
 iostream
+-
+utility
+-
+memory
 -
 

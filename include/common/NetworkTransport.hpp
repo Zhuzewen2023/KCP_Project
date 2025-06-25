@@ -4,6 +4,14 @@
 #include <vector>
 #include <cstdint>
 #include <netinet/in.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <unistd.h>
+#include <cstring>
+#include <utility>
+#include <iostream>
+#include <string>
+
 
 class INetworkTransport{
 public:
@@ -12,5 +20,14 @@ public:
     virtual ~INetworkTransport() = default;
 };
 
+class UdpTransport : public INetworkTransport{
+private:
+    int sockfd_ = -1;
+public:
+    UdpTransport(int port);
+    ~UdpTransport() override;
+    void send(const sockaddr_in& addr, const std::vector<uint8_t>& data) override;
+    std::pair<sockaddr_in, std::vector<uint8_t>> receive() override;
+};
 
 #endif
