@@ -1,44 +1,46 @@
 #include "Session.hpp"
 
-UdpSession::UdpSession()
-{
-    transport_ = std::make_unique<UdpTransport>();
-}
+// UdpSession::UdpSession()
+// {
+//     transport_ = std::make_unique<UdpTransport>();
+// }
 
-void UdpSession::set_state(std::unique_ptr<ISessionState> state)
-{
-    state_ = std::move(state);
-}
+// void UdpSession::set_state(std::unique_ptr<ISessionState> state)
+// {
+//     state_ = std::move(state);
+// }
 
-void UdpSession::handle_msg(const std::string& msg)
-{
-    state_->handle_msg(*this, msg);
-}
+// void UdpSession::handle_msg(const std::string& msg)
+// {
+//     state_->handle_msg(*this, msg);
+// }
 
-void UdpSession::send(const std::string& msg)
-{
-    transport_->send(msg);
-}
+// void UdpSession::send(const std::string& msg)
+// {
+//     transport_->send(msg);
+// }
 
-void UdpSession::set_name(const std::string& name)
-{
-    name_ = name;
-}
+// void UdpSession::set_name(const std::string& name)
+// {
+//     name_ = name;
+// }
 
-std::string UdpSession::get_name()
-{
-    return name_;
-}
+// std::string UdpSession::get_name()
+// {
+//     return name_;
+// }
 
-void UdpSession::set_room(std::shared_ptr<Room> room)
-{
-    room_ = room;
-}
+// void UdpSession::set_room(std::shared_ptr<Room> room)
+// {
+//     room_ = room;
+// }
 
-std::shared_ptr<Room> UdpSession::get_room()
-{
-    return room_;
-}
+// std::shared_ptr<Room> UdpSession::get_room()
+// {
+//     return room_;
+// }
+
+
 
 void AuthenticatedState::handle_msg(Session& session, const std::string& msg)
 {

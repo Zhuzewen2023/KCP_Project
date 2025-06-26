@@ -1,39 +1,35 @@
 #include "ChatServer.hpp"
 #include "NetworkTransport.hpp"
+#include "SessionManager.hpp"
 #include <iostream>
 #include <utility>
 #include <memory>
 
 using namespace std;
 
-void UdpChatServer::start()
+KcpChatServer::KcpChatServer(uint16_t port)
 {
-    running_ = true;
-
-    // heartbeat_thread_ = std::thread([this](){
-    //     while(running_){
-
-    //     }
-    // });
-
-    while(running_){
-        
-    }
+    transport_ = make_unique<UdpTransport>(port);
 }
 
-void UdpChatServer::stop()
+void KcpChatServer::start()
 {
     
+    running_ = true;
+
+    while(running_){
+        auto [client_addr, data] = transport_->receive();
+        auto session = KcpSessionManager::get_instance().get_session(client_addr);
+        session->process_packet(data);
+    }
 }
 
-int main(){
-    unique_ptr<INetworkTransport> p_udp_trans = make_unique<UdpTransport>(7654);
-    while(1){
-        std::pair<sockaddr_in, std::vector<uint8_t>> packet;
-        packet = p_udp_trans->receive();
-        printf("Received packet from %s:%d\n", inet_ntoa(packet.first.sin_addr), ntohs(packet.first.sin_port));
-        printf("Received packet: %s\n", packet.second.data());
-        p_udp_trans->send(packet.first, packet.second);
+void KcpChatServer::stop()
+{
+    running_ = false;
+    if(transport_){
+        transport_.reset();
     }
-    return 0;
 }
+
+

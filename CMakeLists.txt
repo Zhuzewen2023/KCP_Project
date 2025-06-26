@@ -18,8 +18,16 @@ include_directories(${CMAKE_SOURCE_DIR}/include
 
 add_executable(kcp_chat_server 
                 src/server/ChatServer.cpp
+                src/common/CommandRouter.cpp
+                src/common/KcpSession.cpp
+                src/common/KcpSessionFactory.cpp
                 src/common/NetworkTransport.cpp
+                src/common/Room.cpp
+                src/common/Session.cpp
+                src/common/SessionManager.cpp
+                src/common/Singleton.cpp
                 third_party/kcp/ikcp.c
+                src/main.cpp
                 )
 
 target_link_libraries(kcp_chat_server kcp pthread)

@@ -26,3 +26,9 @@ std::pair<sockaddr_in, std::vector<uint8_t>> UdpTransport::receive(){
     buffer.resize(len > 0 ? len : 0);
     return std::make_pair(addr, buffer);
 }
+
+// void UdpTransport::close()
+// {
+//     close(sockfd_);
+//     sockfd_ = -1;
+// }

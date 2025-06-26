@@ -4,10 +4,75 @@
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp.c
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp.h
 
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../src/common/CommandRouter.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/KcpSession.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../src/common/KcpSession.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o: ../src/common/KcpSessionFactory.cpp
+
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o: ../include/common/NetworkTransport.hpp
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o: ../src/common/NetworkTransport.cpp
 
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../src/common/Room.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../src/common/Session.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/SessionManager.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../third_party/kcp/ikcp.h
+CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../src/common/SessionManager.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: ../src/common/Singleton.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../include/server/ChatServer.hpp
+CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/KcpSessionFactory.hpp
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/Room.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/SessionManager.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/Singleton.hpp
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/server/ChatServer.hpp
+CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../third_party/kcp/ikcp.h
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../src/server/ChatServer.cpp
 
