@@ -11,8 +11,12 @@ vector
 -
 memory
 -
+unordered_map
+-
 Session.hpp
 ../include/common/Session.hpp
+Singleton.hpp
+../include/common/Singleton.hpp
 
 ../include/common/KcpSession.hpp
 Session.hpp
@@ -69,8 +73,6 @@ CommandRouter.hpp
 ../include/common/CommandRouter.hpp
 KcpSessionFactory.hpp
 ../include/common/KcpSessionFactory.hpp
-Room.hpp
-../include/common/Room.hpp
 memory
 -
 string
@@ -86,6 +88,10 @@ memory
 mutex
 -
 unordered_map
+-
+iostream
+-
+sstream
 -
 
 ../include/common/Singleton.hpp
@@ -145,10 +151,14 @@ Room.hpp
 /home/zhuzewen/share/KCP_Project/src/common/Session.cpp
 Session.hpp
 /home/zhuzewen/share/KCP_Project/src/common/Session.hpp
+CommandRouter.hpp
+/home/zhuzewen/share/KCP_Project/src/common/CommandRouter.hpp
 
 /home/zhuzewen/share/KCP_Project/src/common/SessionManager.cpp
 SessionManager.hpp
 /home/zhuzewen/share/KCP_Project/src/common/SessionManager.hpp
+KcpSession.hpp
+/home/zhuzewen/share/KCP_Project/src/common/KcpSession.hpp
 
 /home/zhuzewen/share/KCP_Project/src/common/Singleton.cpp
 Singleton.hpp

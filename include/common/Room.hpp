@@ -1,6 +1,7 @@
 #ifndef __ROOM_HPP__
 #define __ROOM_HPP__
 
+#if 0
 #include <memory>
 #include <vector>
 #include <unordered_map>
@@ -11,23 +12,23 @@ class Room : public std::enable_shared_from_this<Room>
 {
 private:
     int id_;
-    std::vector<std::weak_ptr<Session>> members_;
+    std::vector<std::weak_ptr<ISession>> members_;
 public:
     Room(int id) : id_(id) {}
-    void add_member(std::shared_ptr<Session> member) {
+    void add_member(std::shared_ptr<ISession> member) {
         members_.push_back(member);
     }
 
-    void remove_member(std::shared_ptr<Session> member) {
+    void remove_member(std::shared_ptr<ISession> member) {
         if(!member){
             return;
         }
-        std::weak_ptr<Session> member_weak = member;
+        std::weak_ptr<ISession> member_weak = member;
         members_.erase(std::remove(members_.begin(), members_.end(), member_weak), members_.end());
 
     }
 
-    void broadcast(const std::string& message, std::shared_ptr<Session> sender) {
+    void broadcast(const std::string& message, std::shared_ptr<ISession> sender) {
         auto formatted = "[" + sender->get_name() + "]: " + message;
 
         for(auto& member : members_) {
@@ -54,7 +55,7 @@ public:
         return make_shared<Room>(id);
     }
 
-    void move_session(std::shared_ptr<Session> session, int room_id) {
+    void move_session(std::shared_ptr<ISession> session, int room_id) {
         if(auto curr_room = session->get_room()){
             curr_room->remove_member(session);
         }
@@ -65,5 +66,6 @@ public:
     }
     
 };
+#endif
 
 #endif

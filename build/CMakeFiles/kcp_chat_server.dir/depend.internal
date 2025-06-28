@@ -18,7 +18,6 @@ CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o
  ../include/common/KcpSession.hpp
  ../include/common/KcpSessionFactory.hpp
  ../include/common/NetworkTransport.hpp
- ../include/common/Room.hpp
  ../include/common/Session.hpp
  ../include/common/Singleton.hpp
  ../third_party/kcp/ikcp.h
@@ -43,16 +42,15 @@ CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o
  ../include/common/CommandRouter.hpp
  ../include/common/KcpSessionFactory.hpp
  ../include/common/NetworkTransport.hpp
- ../include/common/Room.hpp
  ../include/common/Session.hpp
  ../include/common/Singleton.hpp
  ../third_party/kcp/ikcp.h
  /home/zhuzewen/share/KCP_Project/src/common/Session.cpp
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o
  ../include/common/CommandRouter.hpp
+ ../include/common/KcpSession.hpp
  ../include/common/KcpSessionFactory.hpp
  ../include/common/NetworkTransport.hpp
- ../include/common/Room.hpp
  ../include/common/Session.hpp
  ../include/common/SessionManager.hpp
  ../include/common/Singleton.hpp
@@ -69,7 +67,6 @@ CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o
  ../include/common/CommandRouter.hpp
  ../include/common/KcpSessionFactory.hpp
  ../include/common/NetworkTransport.hpp
- ../include/common/Room.hpp
  ../include/common/Session.hpp
  ../include/common/SessionManager.hpp
  ../include/common/Singleton.hpp

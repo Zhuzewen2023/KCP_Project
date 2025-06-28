@@ -3,12 +3,16 @@
 
 #include <vector>
 #include <memory>
+#include <unordered_map>
 #include "Session.hpp"
+#include "Singleton.hpp"
+
+class ISession;
 
 class ICommandHandler
 {
 public:
-    virtual void handle_command(Session& session, const std::string& command) = 0;
+    virtual void handle_command(ISession& session, const std::string& command) = 0;
     virtual bool can_handle(const std::string& command) = 0;
     virtual ~ICommandHandler() = default;
 };
@@ -17,7 +21,7 @@ public:
 class JoinCommandHandler : public ICommandHandler
 {
 public:
-    void handle_command(Session& session, const std::string& command) override;
+    void handle_command(ISession& session, const std::string& command) override;
     bool can_handle(const std::string& command) override;
 };
 
@@ -25,16 +29,19 @@ public:
 class NameCommandHandler : public ICommandHandler
 {
 public:
-    void handle_command(Session& session, const std::string& command) override;
+    void handle_command(ISession& session, const std::string& command) override;
     bool can_handle(const std::string& command) override;
 };
 
 
-class CommandRouter
+class CommandRouter : public Singleton<CommandRouter>
 {
 private:
-    std::vector<std::unique_ptr<ICommandHandler>> handlers;
+    std::unordered_map<std::string, std::unique_ptr<ICommandHandler>> handlers_map;
 public:
+    void execute(ISession& session, const std::string& command);
+    void register_handler(const std::string& command, std::unique_ptr<ICommandHandler> handler);
+    void unregister_handler(const std::string& command);
 };
 
 #endif

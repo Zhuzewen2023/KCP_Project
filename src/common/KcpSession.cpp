@@ -12,7 +12,8 @@ static int kcp_output(const char *buf, int len, ikcpcb *kcp, void *user)
     return 0;
 }
 
-KcpSession::KcpSession(const sockaddr_in& client_addr): client_addr_(client_addr_), last_update_time_(std::chrono::steady_clock::now())
+KcpSession::KcpSession(const sockaddr_in& client_addr): client_addr_(client_addr_), 
+last_update_time_(static_cast<uint32_t>(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count()))
 {
     kcp_ = KcpSessionFactory::create_kcp_session(this);
     ikcp_setoutput(kcp_, kcp_output);
@@ -45,7 +46,7 @@ void KcpSession::send_raw(const std::vector<uint8_t>& data)
     }
 }
 
-void KcpSession::process_packet(const std::vector<uint8_t>& data)
+void KcpSession::process_packet(const std::vector<uint8_t>& packet)
 {
     ikcp_input(kcp_, reinterpret_cast<const char*>(packet.data()), packet.size());
     update_kcp();
@@ -62,11 +63,11 @@ void KcpSession::process_packet(const std::vector<uint8_t>& data)
 
 void KcpSession::update_kcp()
 {
-    auto now = std::chrono::steady_clock::now();
-    auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - last_update_time_).count();
+    auto now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+    auto elapsed = static_cast<uint32_t>(now_ms) - last_update_time_;
     if(elapsed > 0){
-        ikcp_update(kcp_, now);
-        last_update_time_ = now;
+        ikcp_update(kcp_, now_ms);
+        last_update_time_ = now_ms;
     }
 
 }
@@ -90,12 +91,12 @@ std::string KcpSession::get_name()
     return name_;
 }
 
-void KcpSession::set_room(std::shared_ptr<Room> room)
-{
-    room_ = room;
-}
+// void KcpSession::set_room(std::shared_ptr<Room> room)
+// {
+//     room_ = room;
+// }
 
-std::shared_ptr<Room> KcpSession::get_room()
-{
-    return room_;
-}
+// std::shared_ptr<Room> KcpSession::get_room()
+// {
+//     return room_;
+// }

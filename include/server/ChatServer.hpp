@@ -6,7 +6,7 @@
 #include <thread>
 
 class IChatServer{
-private:
+protected:
     std::unique_ptr<INetworkTransport> transport_;
     bool running_ = false;
     // std::thread heartbeat_thread_;
@@ -33,6 +33,6 @@ public:
     KcpChatServer(uint16_t port);
     void start() override;
     void stop() override;
-}
+};
 
 #endif

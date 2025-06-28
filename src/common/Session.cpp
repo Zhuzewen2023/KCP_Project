@@ -1,4 +1,5 @@
 #include "Session.hpp"
+#include "CommandRouter.hpp"
 
 // UdpSession::UdpSession()
 // {
@@ -42,16 +43,16 @@
 
 
 
-void AuthenticatedState::handle_msg(Session& session, const std::string& msg)
+void AuthenticatedState::handle_msg(ISession& session, const std::string& msg)
 {
     if(msg[0] == '/'){
         CommandRouter::get_instance().execute(session, msg);
     }else{
-        session.get_room().broadcast(msg, session);
+        // session.get_room().broadcast(msg, session);
     }
 }
 
-void UnauthenticatedState::handle_msg(Session& session, const std::string& msg)
+void UnauthenticatedState::handle_msg(ISession& session, const std::string& msg)
 {
     if(msg.find("/auth ") == 0){
         session.set_state(std::make_unique<AuthenticatedState>());

@@ -6,8 +6,11 @@
 #include <memory>
 #include <mutex>
 #include <unordered_map>
+#include <iostream>
+#include <sstream>
 
-class ISessionManager : public Singleton<ISessionManager> {
+class ISessionManager 
+{
 public:
     virtual std::shared_ptr<ISession> get_session(const sockaddr_in& addr) = 0;
 protected:
@@ -16,8 +19,18 @@ protected:
     
 };
 
-class KcpSessionManager : public ISessionManager {
+static std::string addr_to_string(const sockaddr_in& addr)
+{
+    std::ostringstream oss;
+    oss << inet_ntoa(addr.sin_addr) << ":" << ntohs(addr.sin_port);
+    return oss.str();
+}
+
+class KcpSessionManager : public ISessionManager, public Singleton<KcpSessionManager> 
+{
 public:
     std::shared_ptr<ISession> get_session(const sockaddr_in& addr) override;
+private:
+    
 };
 #endif
