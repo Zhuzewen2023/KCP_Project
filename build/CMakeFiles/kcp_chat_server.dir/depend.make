@@ -59,10 +59,6 @@ CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../src/common/Se
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: ../include/common/Singleton.hpp
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: ../src/common/Singleton.cpp
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../include/common/NetworkTransport.hpp
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../include/server/ChatServer.hpp
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../src/main.cpp
-
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/CommandRouter.hpp
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/KcpSessionFactory.hpp
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/NetworkTransport.hpp
@@ -72,4 +68,8 @@ CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/common/Si
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../include/server/ChatServer.hpp
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../third_party/kcp/ikcp.h
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../src/server/ChatServer.cpp
+
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: ../include/server/ChatServer.hpp
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: ../src/server_main.cpp
 

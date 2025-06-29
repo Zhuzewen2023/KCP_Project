@@ -3,12 +3,17 @@
 #include <chrono>
 #include "ikcp.h"
 #include <functional>
+#include <iostream>
+
+using namespace std;
 // #include <arpa/inet.h>
 
 static int kcp_output(const char *buf, int len, ikcpcb *kcp, void *user)
 {
+    cout << "KcpSession kcp_output" << endl;
     KcpSession* session = static_cast<KcpSession*>(user);
     session->send_raw(std::vector<uint8_t>(buf, buf + len));
+    cout << "KcpSession send_raw: " << buf << endl;
     return 0;
 }
 
@@ -48,14 +53,26 @@ void KcpSession::send_raw(const std::vector<uint8_t>& data)
 
 void KcpSession::process_packet(const std::vector<uint8_t>& packet)
 {
+    if(!kcp_){
+        cout << "KcpSession process_packet kcp_ is nullptr" << endl;
+        return;
+    }
     ikcp_input(kcp_, reinterpret_cast<const char*>(packet.data()), packet.size());
     update_kcp();
-
+    cout << "KcpSession process packet" << endl;
     char buffer[4096];
     while(true){
         int len = ikcp_recv(kcp_, buffer, sizeof(buffer));
         if(len <= 0){
+            cout << "ikcp_recv len <= 0, KcpSession process packet break" << endl;
+            if(len == 0){
+                cout << "ikcl_recv == 0, no data to read" << endl;
+            }else{
+                cout << "ikcp_recv len < 0, error: " << len << endl;
+            }
             break;
+        }else{
+            cout << "ikcp_recv len > 0, recv: " << buffer << endl;
         }
         handle_msg(std::string(buffer, len));
     }
@@ -66,6 +83,7 @@ void KcpSession::update_kcp()
     auto now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
     auto elapsed = static_cast<uint32_t>(now_ms) - last_update_time_;
     if(elapsed > 0){
+        cout << "KcpSession update_kcp elapsed: " << elapsed << " now_ms: " << now_ms << endl;
         ikcp_update(kcp_, now_ms);
         last_update_time_ = now_ms;
     }

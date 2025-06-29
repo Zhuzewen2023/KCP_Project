@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/zhuzewen/share/KCP_Project/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run
+# Target rules for targets named kcp_chat_server
 
 # Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run
-.PHONY : run
+kcp_chat_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kcp_chat_server
+.PHONY : kcp_chat_server
 
 # fast build rule for target.
-run/fast:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-.PHONY : run/fast
+kcp_chat_server/fast:
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/build
+.PHONY : kcp_chat_server/fast
 
 #=============================================================================
 # Target rules for targets named kcp
@@ -137,17 +137,97 @@ kcp/fast:
 .PHONY : kcp/fast
 
 #=============================================================================
-# Target rules for targets named kcp_chat_server
+# Target rules for targets named kcp_chat_client
 
 # Build rule for target.
-kcp_chat_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kcp_chat_server
-.PHONY : kcp_chat_server
+kcp_chat_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kcp_chat_client
+.PHONY : kcp_chat_client
 
 # fast build rule for target.
-kcp_chat_server/fast:
-	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/build
-.PHONY : kcp_chat_server/fast
+kcp_chat_client/fast:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/build
+.PHONY : kcp_chat_client/fast
+
+#=============================================================================
+# Target rules for targets named run_client
+
+# Build rule for target.
+run_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_client
+.PHONY : run_client
+
+# fast build rule for target.
+run_client/fast:
+	$(MAKE) -f CMakeFiles/run_client.dir/build.make CMakeFiles/run_client.dir/build
+.PHONY : run_client/fast
+
+#=============================================================================
+# Target rules for targets named run_server
+
+# Build rule for target.
+run_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_server
+.PHONY : run_server
+
+# fast build rule for target.
+run_server/fast:
+	$(MAKE) -f CMakeFiles/run_server.dir/build.make CMakeFiles/run_server.dir/build
+.PHONY : run_server/fast
+
+src/client/ChatClient.o: src/client/ChatClient.cpp.o
+
+.PHONY : src/client/ChatClient.o
+
+# target to build an object file
+src/client/ChatClient.cpp.o:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o
+.PHONY : src/client/ChatClient.cpp.o
+
+src/client/ChatClient.i: src/client/ChatClient.cpp.i
+
+.PHONY : src/client/ChatClient.i
+
+# target to preprocess a source file
+src/client/ChatClient.cpp.i:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.i
+.PHONY : src/client/ChatClient.cpp.i
+
+src/client/ChatClient.s: src/client/ChatClient.cpp.s
+
+.PHONY : src/client/ChatClient.s
+
+# target to generate assembly for a file
+src/client/ChatClient.cpp.s:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.s
+.PHONY : src/client/ChatClient.cpp.s
+
+src/client_main.o: src/client_main.cpp.o
+
+.PHONY : src/client_main.o
+
+# target to build an object file
+src/client_main.cpp.o:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o
+.PHONY : src/client_main.cpp.o
+
+src/client_main.i: src/client_main.cpp.i
+
+.PHONY : src/client_main.i
+
+# target to preprocess a source file
+src/client_main.cpp.i:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.i
+.PHONY : src/client_main.cpp.i
+
+src/client_main.s: src/client_main.cpp.s
+
+.PHONY : src/client_main.s
+
+# target to generate assembly for a file
+src/client_main.cpp.s:
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.s
+.PHONY : src/client_main.cpp.s
 
 src/common/CommandRouter.o: src/common/CommandRouter.cpp.o
 
@@ -156,6 +236,7 @@ src/common/CommandRouter.o: src/common/CommandRouter.cpp.o
 # target to build an object file
 src/common/CommandRouter.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/CommandRouter.cpp.o
 .PHONY : src/common/CommandRouter.cpp.o
 
 src/common/CommandRouter.i: src/common/CommandRouter.cpp.i
@@ -165,6 +246,7 @@ src/common/CommandRouter.i: src/common/CommandRouter.cpp.i
 # target to preprocess a source file
 src/common/CommandRouter.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/CommandRouter.cpp.i
 .PHONY : src/common/CommandRouter.cpp.i
 
 src/common/CommandRouter.s: src/common/CommandRouter.cpp.s
@@ -174,6 +256,7 @@ src/common/CommandRouter.s: src/common/CommandRouter.cpp.s
 # target to generate assembly for a file
 src/common/CommandRouter.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/CommandRouter.cpp.s
 .PHONY : src/common/CommandRouter.cpp.s
 
 src/common/KcpSession.o: src/common/KcpSession.cpp.o
@@ -183,6 +266,7 @@ src/common/KcpSession.o: src/common/KcpSession.cpp.o
 # target to build an object file
 src/common/KcpSession.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSession.cpp.o
 .PHONY : src/common/KcpSession.cpp.o
 
 src/common/KcpSession.i: src/common/KcpSession.cpp.i
@@ -192,6 +276,7 @@ src/common/KcpSession.i: src/common/KcpSession.cpp.i
 # target to preprocess a source file
 src/common/KcpSession.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSession.cpp.i
 .PHONY : src/common/KcpSession.cpp.i
 
 src/common/KcpSession.s: src/common/KcpSession.cpp.s
@@ -201,6 +286,7 @@ src/common/KcpSession.s: src/common/KcpSession.cpp.s
 # target to generate assembly for a file
 src/common/KcpSession.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSession.cpp.s
 .PHONY : src/common/KcpSession.cpp.s
 
 src/common/KcpSessionFactory.o: src/common/KcpSessionFactory.cpp.o
@@ -210,6 +296,7 @@ src/common/KcpSessionFactory.o: src/common/KcpSessionFactory.cpp.o
 # target to build an object file
 src/common/KcpSessionFactory.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSessionFactory.cpp.o
 .PHONY : src/common/KcpSessionFactory.cpp.o
 
 src/common/KcpSessionFactory.i: src/common/KcpSessionFactory.cpp.i
@@ -219,6 +306,7 @@ src/common/KcpSessionFactory.i: src/common/KcpSessionFactory.cpp.i
 # target to preprocess a source file
 src/common/KcpSessionFactory.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSessionFactory.cpp.i
 .PHONY : src/common/KcpSessionFactory.cpp.i
 
 src/common/KcpSessionFactory.s: src/common/KcpSessionFactory.cpp.s
@@ -228,6 +316,7 @@ src/common/KcpSessionFactory.s: src/common/KcpSessionFactory.cpp.s
 # target to generate assembly for a file
 src/common/KcpSessionFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/KcpSessionFactory.cpp.s
 .PHONY : src/common/KcpSessionFactory.cpp.s
 
 src/common/NetworkTransport.o: src/common/NetworkTransport.cpp.o
@@ -237,6 +326,7 @@ src/common/NetworkTransport.o: src/common/NetworkTransport.cpp.o
 # target to build an object file
 src/common/NetworkTransport.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/NetworkTransport.cpp.o
 .PHONY : src/common/NetworkTransport.cpp.o
 
 src/common/NetworkTransport.i: src/common/NetworkTransport.cpp.i
@@ -246,6 +336,7 @@ src/common/NetworkTransport.i: src/common/NetworkTransport.cpp.i
 # target to preprocess a source file
 src/common/NetworkTransport.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/NetworkTransport.cpp.i
 .PHONY : src/common/NetworkTransport.cpp.i
 
 src/common/NetworkTransport.s: src/common/NetworkTransport.cpp.s
@@ -255,6 +346,7 @@ src/common/NetworkTransport.s: src/common/NetworkTransport.cpp.s
 # target to generate assembly for a file
 src/common/NetworkTransport.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/NetworkTransport.cpp.s
 .PHONY : src/common/NetworkTransport.cpp.s
 
 src/common/Room.o: src/common/Room.cpp.o
@@ -264,6 +356,7 @@ src/common/Room.o: src/common/Room.cpp.o
 # target to build an object file
 src/common/Room.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Room.cpp.o
 .PHONY : src/common/Room.cpp.o
 
 src/common/Room.i: src/common/Room.cpp.i
@@ -273,6 +366,7 @@ src/common/Room.i: src/common/Room.cpp.i
 # target to preprocess a source file
 src/common/Room.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Room.cpp.i
 .PHONY : src/common/Room.cpp.i
 
 src/common/Room.s: src/common/Room.cpp.s
@@ -282,6 +376,7 @@ src/common/Room.s: src/common/Room.cpp.s
 # target to generate assembly for a file
 src/common/Room.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Room.cpp.s
 .PHONY : src/common/Room.cpp.s
 
 src/common/Session.o: src/common/Session.cpp.o
@@ -291,6 +386,7 @@ src/common/Session.o: src/common/Session.cpp.o
 # target to build an object file
 src/common/Session.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Session.cpp.o
 .PHONY : src/common/Session.cpp.o
 
 src/common/Session.i: src/common/Session.cpp.i
@@ -300,6 +396,7 @@ src/common/Session.i: src/common/Session.cpp.i
 # target to preprocess a source file
 src/common/Session.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Session.cpp.i
 .PHONY : src/common/Session.cpp.i
 
 src/common/Session.s: src/common/Session.cpp.s
@@ -309,6 +406,7 @@ src/common/Session.s: src/common/Session.cpp.s
 # target to generate assembly for a file
 src/common/Session.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Session.cpp.s
 .PHONY : src/common/Session.cpp.s
 
 src/common/SessionManager.o: src/common/SessionManager.cpp.o
@@ -318,6 +416,7 @@ src/common/SessionManager.o: src/common/SessionManager.cpp.o
 # target to build an object file
 src/common/SessionManager.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/SessionManager.cpp.o
 .PHONY : src/common/SessionManager.cpp.o
 
 src/common/SessionManager.i: src/common/SessionManager.cpp.i
@@ -327,6 +426,7 @@ src/common/SessionManager.i: src/common/SessionManager.cpp.i
 # target to preprocess a source file
 src/common/SessionManager.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/SessionManager.cpp.i
 .PHONY : src/common/SessionManager.cpp.i
 
 src/common/SessionManager.s: src/common/SessionManager.cpp.s
@@ -336,6 +436,7 @@ src/common/SessionManager.s: src/common/SessionManager.cpp.s
 # target to generate assembly for a file
 src/common/SessionManager.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/SessionManager.cpp.s
 .PHONY : src/common/SessionManager.cpp.s
 
 src/common/Singleton.o: src/common/Singleton.cpp.o
@@ -345,6 +446,7 @@ src/common/Singleton.o: src/common/Singleton.cpp.o
 # target to build an object file
 src/common/Singleton.cpp.o:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Singleton.cpp.o
 .PHONY : src/common/Singleton.cpp.o
 
 src/common/Singleton.i: src/common/Singleton.cpp.i
@@ -354,6 +456,7 @@ src/common/Singleton.i: src/common/Singleton.cpp.i
 # target to preprocess a source file
 src/common/Singleton.cpp.i:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Singleton.cpp.i
 .PHONY : src/common/Singleton.cpp.i
 
 src/common/Singleton.s: src/common/Singleton.cpp.s
@@ -363,34 +466,8 @@ src/common/Singleton.s: src/common/Singleton.cpp.s
 # target to generate assembly for a file
 src/common/Singleton.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/src/common/Singleton.cpp.s
 .PHONY : src/common/Singleton.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
 
 src/server/ChatServer.o: src/server/ChatServer.cpp.o
 
@@ -419,14 +496,42 @@ src/server/ChatServer.cpp.s:
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.s
 .PHONY : src/server/ChatServer.cpp.s
 
+src/server_main.o: src/server_main.cpp.o
+
+.PHONY : src/server_main.o
+
+# target to build an object file
+src/server_main.cpp.o:
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o
+.PHONY : src/server_main.cpp.o
+
+src/server_main.i: src/server_main.cpp.i
+
+.PHONY : src/server_main.i
+
+# target to preprocess a source file
+src/server_main.cpp.i:
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i
+.PHONY : src/server_main.cpp.i
+
+src/server_main.s: src/server_main.cpp.s
+
+.PHONY : src/server_main.s
+
+# target to generate assembly for a file
+src/server_main.cpp.s:
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s
+.PHONY : src/server_main.cpp.s
+
 third_party/kcp/ikcp.o: third_party/kcp/ikcp.c.o
 
 .PHONY : third_party/kcp/ikcp.o
 
 # target to build an object file
 third_party/kcp/ikcp.c.o:
-	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o
+	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/third_party/kcp/ikcp.c.o
 .PHONY : third_party/kcp/ikcp.c.o
 
 third_party/kcp/ikcp.i: third_party/kcp/ikcp.c.i
@@ -435,8 +540,9 @@ third_party/kcp/ikcp.i: third_party/kcp/ikcp.c.i
 
 # target to preprocess a source file
 third_party/kcp/ikcp.c.i:
-	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i
+	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/third_party/kcp/ikcp.c.i
 .PHONY : third_party/kcp/ikcp.c.i
 
 third_party/kcp/ikcp.s: third_party/kcp/ikcp.c.s
@@ -445,8 +551,9 @@ third_party/kcp/ikcp.s: third_party/kcp/ikcp.c.s
 
 # target to generate assembly for a file
 third_party/kcp/ikcp.c.s:
-	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s
 	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s
+	$(MAKE) -f CMakeFiles/kcp.dir/build.make CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s
+	$(MAKE) -f CMakeFiles/kcp_chat_client.dir/build.make CMakeFiles/kcp_chat_client.dir/third_party/kcp/ikcp.c.s
 .PHONY : third_party/kcp/ikcp.c.s
 
 # Help Target
@@ -455,11 +562,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... run"
-	@echo "... kcp"
-	@echo "... edit_cache"
 	@echo "... kcp_chat_server"
+	@echo "... edit_cache"
+	@echo "... kcp"
+	@echo "... rebuild_cache"
+	@echo "... kcp_chat_client"
+	@echo "... run_client"
+	@echo "... run_server"
+	@echo "... src/client/ChatClient.o"
+	@echo "... src/client/ChatClient.i"
+	@echo "... src/client/ChatClient.s"
+	@echo "... src/client_main.o"
+	@echo "... src/client_main.i"
+	@echo "... src/client_main.s"
 	@echo "... src/common/CommandRouter.o"
 	@echo "... src/common/CommandRouter.i"
 	@echo "... src/common/CommandRouter.s"
@@ -484,12 +599,12 @@ help:
 	@echo "... src/common/Singleton.o"
 	@echo "... src/common/Singleton.i"
 	@echo "... src/common/Singleton.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/server/ChatServer.o"
 	@echo "... src/server/ChatServer.i"
 	@echo "... src/server/ChatServer.s"
+	@echo "... src/server_main.o"
+	@echo "... src/server_main.i"
+	@echo "... src/server_main.s"
 	@echo "... third_party/kcp/ikcp.o"
 	@echo "... third_party/kcp/ikcp.i"
 	@echo "... third_party/kcp/ikcp.s"

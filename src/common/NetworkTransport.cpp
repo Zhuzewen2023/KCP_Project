@@ -1,7 +1,15 @@
 #include "NetworkTransport.hpp"
+#include <iostream>
 
 UdpTransport::UdpTransport(int port){
     sockfd_ = socket(AF_INET, SOCK_DGRAM, 0);
+    if(sockfd_ < 0){
+        std::cout << "Failed to create socket" << std::endl;
+        exit(1);
+
+    }else{
+        std::cout << "Socket created: " << sockfd_ << std::endl;
+    }
     sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_port = htons(port);
@@ -23,6 +31,11 @@ std::pair<sockaddr_in, std::vector<uint8_t>> UdpTransport::receive(){
     socklen_t addr_len = sizeof(addr);
     std::vector<uint8_t> buffer(65536);
     int len = recvfrom(sockfd_, buffer.data(), buffer.size(), 0, (sockaddr*)&addr, &addr_len);
+    std::cout << __FILE__ << " " << __func__ << std::endl;
+    std::cout << " recv len: " << len << std::endl;
+    std::cout << "recv addr: " << inet_ntoa(addr.sin_addr) << std::endl;
+    std::cout << "recv port: " << ntohs(addr.sin_port) << std::endl;
+    std::cout << "recv buffer: " << buffer.data() << std::endl;
     buffer.resize(len > 0 ? len : 0);
     return std::make_pair(addr, buffer);
 }

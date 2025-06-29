@@ -297,28 +297,28 @@ CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o.provides: CMakeFiles/kcp
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o.provides.build: CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o
 
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/main.cpp.o -c /home/zhuzewen/share/KCP_Project/src/main.cpp
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: ../src/server_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o -c /home/zhuzewen/share/KCP_Project/src/server_main.cpp
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/main.cpp > CMakeFiles/kcp_chat_server.dir/src/main.cpp.i
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/server_main.cpp > CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/main.cpp -o CMakeFiles/kcp_chat_server.dir/src/main.cpp.s
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/server_main.cpp -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.requires:
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.requires:
 
-.PHONY : CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.requires
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.provides: CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.provides
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.provides: CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/kcp_chat_server.dir/build.make CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.provides.build
+.PHONY : CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.provides
 
-CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.provides.build: CMakeFiles/kcp_chat_server.dir/src/main.cpp.o
+CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.provides.build: CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o
 
 
 # Object files for target kcp_chat_server
@@ -333,7 +333,7 @@ kcp_chat_server_OBJECTS = \
 "CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o" \
 "CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o" \
 "CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o" \
-"CMakeFiles/kcp_chat_server.dir/src/main.cpp.o"
+"CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o"
 
 # External object files for target kcp_chat_server
 kcp_chat_server_EXTERNAL_OBJECTS =
@@ -348,7 +348,7 @@ bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o
-bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/main.cpp.o
+bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/build.make
 bin/kcp_chat_server: libkcp.a
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/link.txt
@@ -370,7 +370,7 @@ CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/src/comm
 CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o.requires
 CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o.requires
 CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o.requires
-CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/src/main.cpp.o.requires
+CMakeFiles/kcp_chat_server.dir/requires: CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.requires
 
 .PHONY : CMakeFiles/kcp_chat_server.dir/requires
 
