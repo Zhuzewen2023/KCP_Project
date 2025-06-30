@@ -42,6 +42,7 @@ public:
     virtual void process_packet(const std::vector<uint8_t>& packet) = 0;
     virtual void send(const std::string& msg) = 0;
     virtual void set_name(const std::string& name) = 0;
+    virtual void set_transport(INetworkTransport *transport) = 0;
     // virtual void set_room(std::shared_ptr<Room> room) = 0;
     virtual std::string get_name() = 0;
     // virtual std::shared_ptr<Room> get_room() = 0;
