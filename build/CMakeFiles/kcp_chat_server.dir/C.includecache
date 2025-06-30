@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c
+/samba_share/KCP_Project/third_party/kcp/ikcp.c
 ikcp.h
-/home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.h
+/samba_share/KCP_Project/third_party/kcp/ikcp.h
 stddef.h
 -
 stdlib.h
@@ -20,7 +20,7 @@ stdarg.h
 stdio.h
 -
 
-/home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.h
+/samba_share/KCP_Project/third_party/kcp/ikcp.h
 stddef.h
 -
 stdlib.h

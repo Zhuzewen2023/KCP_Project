@@ -58,7 +58,7 @@ void UnauthenticatedState::handle_msg(ISession& session, const std::string& msg)
     if(msg.find("/auth ") == 0){
         session.set_state(std::make_unique<AuthenticatedState>());
     }else{
-        session.send("WARNING:You are not authenticated\n");
+        // session.send("WARNING:You are not authenticated\n");
         session.send(msg);
     }
 }

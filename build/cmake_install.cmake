@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhuzewen/share/KCP_Project
+# Install script for directory: /samba_share/KCP_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhuzewen/share/KCP_Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/samba_share/KCP_Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

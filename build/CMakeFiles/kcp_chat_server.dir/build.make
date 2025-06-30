@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhuzewen/share/KCP_Project
+CMAKE_SOURCE_DIR = /samba_share/KCP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhuzewen/share/KCP_Project/build
+CMAKE_BINARY_DIR = /samba_share/KCP_Project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kcp_chat_server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/kcp_chat_server.dir/flags.make
 
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o: ../src/server/ChatServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o -c /home/zhuzewen/share/KCP_Project/src/server/ChatServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o -c /samba_share/KCP_Project/src/server/ChatServer.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/server/ChatServer.cpp > CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/server/ChatServer.cpp > CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/server/ChatServer.cpp -o CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/server/ChatServer.cpp -o CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/kcp_chat_server.dir/src/server/ChatServer.cpp.o.provides.build: CMake
 
 CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o: ../src/common/CommandRouter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/CommandRouter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o -c /samba_share/KCP_Project/src/common/CommandRouter.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/CommandRouter.cpp > CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/CommandRouter.cpp > CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/CommandRouter.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/CommandRouter.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/CommandRouter.cpp.o.provides.build: CM
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o: ../src/common/KcpSession.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/KcpSession.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o -c /samba_share/KCP_Project/src/common/KcpSession.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/KcpSession.cpp > CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/KcpSession.cpp > CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/KcpSession.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/KcpSession.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/KcpSession.cpp.o.provides.build: CMake
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o: ../src/common/KcpSessionFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o -c /samba_share/KCP_Project/src/common/KcpSessionFactory.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.cpp > CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/KcpSessionFactory.cpp > CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/KcpSessionFactory.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/KcpSessionFactory.cpp.o.provides.build
 
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o: ../src/common/NetworkTransport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o -c /samba_share/KCP_Project/src/common/NetworkTransport.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp > CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/NetworkTransport.cpp > CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/NetworkTransport.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/NetworkTransport.cpp.o.provides.build:
 
 CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o: ../src/common/Room.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/Room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o -c /samba_share/KCP_Project/src/common/Room.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/Room.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/Room.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/Room.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/Room.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/Room.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o: ../src/common/Session.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/Session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o -c /samba_share/KCP_Project/src/common/Session.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/Session.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/Session.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/Session.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/Session.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/Session.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o: ../src/common/SessionManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/SessionManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o -c /samba_share/KCP_Project/src/common/SessionManager.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/SessionManager.cpp > CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/SessionManager.cpp > CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/SessionManager.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/SessionManager.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/SessionManager.cpp.o.provides.build: C
 
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o: ../src/common/Singleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o -c /home/zhuzewen/share/KCP_Project/src/common/Singleton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o -c /samba_share/KCP_Project/src/common/Singleton.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/common/Singleton.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/common/Singleton.cpp > CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/common/Singleton.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/common/Singleton.cpp -o CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/kcp_chat_server.dir/src/common/Singleton.cpp.o.provides.build: CMakeF
 
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o   -c /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o   -c /samba_share/KCP_Project/third_party/kcp/ikcp.c
 
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c > CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /samba_share/KCP_Project/third_party/kcp/ikcp.c > CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.i
 
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c -o CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /samba_share/KCP_Project/third_party/kcp/ikcp.c -o CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.s
 
 CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/kcp_chat_server.dir/third_party/kcp/ikcp.c.o.provides.build: CMakeFil
 
 CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: CMakeFiles/kcp_chat_server.dir/flags.make
 CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o: ../src/server_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o -c /home/zhuzewen/share/KCP_Project/src/server_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o -c /samba_share/KCP_Project/src/server_main.cpp
 
 CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhuzewen/share/KCP_Project/src/server_main.cpp > CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /samba_share/KCP_Project/src/server_main.cpp > CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.i
 
 CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhuzewen/share/KCP_Project/src/server_main.cpp -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /samba_share/KCP_Project/src/server_main.cpp -o CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.s
 
 CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o.requires:
 
@@ -352,7 +352,7 @@ bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/src/server_main.cpp.o
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/build.make
 bin/kcp_chat_server: libkcp.a
 bin/kcp_chat_server: CMakeFiles/kcp_chat_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/kcp_chat_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/kcp_chat_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kcp_chat_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -379,6 +379,6 @@ CMakeFiles/kcp_chat_server.dir/clean:
 .PHONY : CMakeFiles/kcp_chat_server.dir/clean
 
 CMakeFiles/kcp_chat_server.dir/depend:
-	cd /home/zhuzewen/share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build/CMakeFiles/kcp_chat_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /samba_share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /samba_share/KCP_Project /samba_share/KCP_Project /samba_share/KCP_Project/build /samba_share/KCP_Project/build /samba_share/KCP_Project/build/CMakeFiles/kcp_chat_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kcp_chat_server.dir/depend
 

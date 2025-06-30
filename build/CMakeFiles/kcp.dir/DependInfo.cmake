@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c" "/home/zhuzewen/share/KCP_Project/build/CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o"
+  "/samba_share/KCP_Project/third_party/kcp/ikcp.c" "/samba_share/KCP_Project/build/CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

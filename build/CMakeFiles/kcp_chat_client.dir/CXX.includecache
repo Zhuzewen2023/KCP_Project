@@ -7,6 +7,38 @@
 #IncludeRegexTransform: 
 
 ../include/client/ChatClient.hpp
+iostream
+-
+string
+-
+cstdint
+-
+NetworkTransport.hpp
+../include/client/NetworkTransport.hpp
+ikcp.h
+../include/client/ikcp.h
+KcpSession.hpp
+../include/client/KcpSession.hpp
+functional
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+queue
+-
+arpa/inet.h
+-
+netinet/in.h
+-
+sys/socket.h
+-
+unistd.h
+-
+atomic
+-
 
 ../include/common/CommandRouter.hpp
 vector
@@ -26,6 +58,10 @@ Session.hpp
 ikcp.h
 ../include/common/ikcp.h
 arpa/inet.h
+-
+thread
+-
+atomic
 -
 
 ../include/common/KcpSessionFactory.hpp
@@ -112,11 +148,17 @@ sys/inttypes.h
 stdint.h
 -
 
-/home/zhuzewen/share/KCP_Project/src/client/ChatClient.cpp
+/samba_share/KCP_Project/src/client/ChatClient.cpp
 ChatClient.hpp
-/home/zhuzewen/share/KCP_Project/src/client/ChatClient.hpp
+/samba_share/KCP_Project/src/client/ChatClient.hpp
+KcpSession.hpp
+/samba_share/KCP_Project/src/client/KcpSession.hpp
+arpa/inet.h
+-
+chrono
+-
 
-/home/zhuzewen/share/KCP_Project/src/client_main.cpp
+/samba_share/KCP_Project/src/client_main.cpp
 cstdio
 -
 vector
@@ -128,59 +170,59 @@ arpa/inet.h
 iostream
 -
 NetworkTransport.hpp
-/home/zhuzewen/share/KCP_Project/src/NetworkTransport.hpp
+/samba_share/KCP_Project/src/NetworkTransport.hpp
 ChatClient.hpp
-/home/zhuzewen/share/KCP_Project/src/ChatClient.hpp
+/samba_share/KCP_Project/src/ChatClient.hpp
 
-/home/zhuzewen/share/KCP_Project/src/common/CommandRouter.cpp
+/samba_share/KCP_Project/src/common/CommandRouter.cpp
 CommandRouter.hpp
-/home/zhuzewen/share/KCP_Project/src/common/CommandRouter.hpp
+/samba_share/KCP_Project/src/common/CommandRouter.hpp
 Room.hpp
-/home/zhuzewen/share/KCP_Project/src/common/Room.hpp
+/samba_share/KCP_Project/src/common/Room.hpp
 
-/home/zhuzewen/share/KCP_Project/src/common/KcpSession.cpp
+/samba_share/KCP_Project/src/common/KcpSession.cpp
 KcpSession.hpp
-/home/zhuzewen/share/KCP_Project/src/common/KcpSession.hpp
+/samba_share/KCP_Project/src/common/KcpSession.hpp
 KcpSessionFactory.hpp
-/home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.hpp
+/samba_share/KCP_Project/src/common/KcpSessionFactory.hpp
 chrono
 -
 ikcp.h
-/home/zhuzewen/share/KCP_Project/src/common/ikcp.h
+/samba_share/KCP_Project/src/common/ikcp.h
 functional
 -
 iostream
 -
 
-/home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.cpp
+/samba_share/KCP_Project/src/common/KcpSessionFactory.cpp
 KcpSessionFactory.hpp
-/home/zhuzewen/share/KCP_Project/src/common/KcpSessionFactory.hpp
+/samba_share/KCP_Project/src/common/KcpSessionFactory.hpp
 
-/home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.cpp
+/samba_share/KCP_Project/src/common/NetworkTransport.cpp
 NetworkTransport.hpp
-/home/zhuzewen/share/KCP_Project/src/common/NetworkTransport.hpp
+/samba_share/KCP_Project/src/common/NetworkTransport.hpp
 iostream
 -
 
-/home/zhuzewen/share/KCP_Project/src/common/Room.cpp
+/samba_share/KCP_Project/src/common/Room.cpp
 Room.hpp
-/home/zhuzewen/share/KCP_Project/src/common/Room.hpp
+/samba_share/KCP_Project/src/common/Room.hpp
 
-/home/zhuzewen/share/KCP_Project/src/common/Session.cpp
+/samba_share/KCP_Project/src/common/Session.cpp
 Session.hpp
-/home/zhuzewen/share/KCP_Project/src/common/Session.hpp
+/samba_share/KCP_Project/src/common/Session.hpp
 CommandRouter.hpp
-/home/zhuzewen/share/KCP_Project/src/common/CommandRouter.hpp
+/samba_share/KCP_Project/src/common/CommandRouter.hpp
 
-/home/zhuzewen/share/KCP_Project/src/common/SessionManager.cpp
+/samba_share/KCP_Project/src/common/SessionManager.cpp
 SessionManager.hpp
-/home/zhuzewen/share/KCP_Project/src/common/SessionManager.hpp
+/samba_share/KCP_Project/src/common/SessionManager.hpp
 KcpSession.hpp
-/home/zhuzewen/share/KCP_Project/src/common/KcpSession.hpp
+/samba_share/KCP_Project/src/common/KcpSession.hpp
 iostream
 -
 
-/home/zhuzewen/share/KCP_Project/src/common/Singleton.cpp
+/samba_share/KCP_Project/src/common/Singleton.cpp
 Singleton.hpp
-/home/zhuzewen/share/KCP_Project/src/common/Singleton.hpp
+/samba_share/KCP_Project/src/common/Singleton.hpp
 

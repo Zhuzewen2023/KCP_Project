@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhuzewen/share/KCP_Project
+CMAKE_SOURCE_DIR = /samba_share/KCP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhuzewen/share/KCP_Project/build
+CMAKE_BINARY_DIR = /samba_share/KCP_Project/build
 
 # Utility rule file for run_server.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/zhuzewen/share/KCP_Project/build
 include CMakeFiles/run_server.dir/progress.make
 
 CMakeFiles/run_server: bin/kcp_chat_server
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running kcp_chat_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running kcp_chat_server"
 	bin/kcp_chat_server
 
 run_server: CMakeFiles/run_server
@@ -72,6 +72,6 @@ CMakeFiles/run_server.dir/clean:
 .PHONY : CMakeFiles/run_server.dir/clean
 
 CMakeFiles/run_server.dir/depend:
-	cd /home/zhuzewen/share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build/CMakeFiles/run_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /samba_share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /samba_share/KCP_Project /samba_share/KCP_Project /samba_share/KCP_Project/build /samba_share/KCP_Project/build /samba_share/KCP_Project/build/CMakeFiles/run_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_server.dir/depend
 

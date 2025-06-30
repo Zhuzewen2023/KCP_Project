@@ -4,6 +4,8 @@
 #include "Session.hpp"
 #include "ikcp.h"
 #include <arpa/inet.h>
+#include <thread>
+#include <atomic>
 
 class KcpSession : public ISession
 {
@@ -20,9 +22,14 @@ public:
     void set_name(const std::string& name) override;
     // void set_room(std::shared_ptr<Room> room) override;
     void process_packet(const std::vector<uint8_t>& packet) override;
-
+    void start_update_thread();
+    void stop_update_thread();
     void update_kcp(); // update kcp session
+    std::atomic<bool> is_running_{false};
+    
 private:
+    
+    std::thread update_thread_;
     ikcpcb *kcp_ = nullptr; // kcp session
     struct sockaddr_in client_addr_;
     uint32_t last_update_time_ = 0;

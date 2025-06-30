@@ -29,7 +29,9 @@ public:
 class KcpChatServer : public IChatServer
 {
 private:
+    std::thread kcp_update_thread_;
 public:
+    // static void kcp_update_thread_func(KcpChatServer *server);
     KcpChatServer(uint16_t port);
     void start() override;
     void stop() override;

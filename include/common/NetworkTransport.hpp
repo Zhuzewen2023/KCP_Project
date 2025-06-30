@@ -16,6 +16,7 @@
 class INetworkTransport{
 public:
     virtual void send(const sockaddr_in& addr, const std::vector<uint8_t>& data) = 0;
+    virtual void send(const std::vector<uint8_t>& data) = 0;
     virtual std::pair<sockaddr_in, std::vector<uint8_t>> receive() = 0;
     // virtual void close() = 0;
     virtual ~INetworkTransport() = default;
@@ -24,10 +25,13 @@ public:
 class UdpTransport : public INetworkTransport{
 private:
     int sockfd_ = -1;
+    sockaddr_in addr_;
 public:
     UdpTransport(int port);
+    UdpTransport(const sockaddr_in& addr);
     ~UdpTransport() override;
     void send(const sockaddr_in& addr, const std::vector<uint8_t>& data) override;
+    void send(const std::vector<uint8_t>& data) override;
     std::pair<sockaddr_in, std::vector<uint8_t>> receive() override;
     // void close() override;
 };

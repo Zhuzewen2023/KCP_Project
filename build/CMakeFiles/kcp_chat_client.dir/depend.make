@@ -5,10 +5,23 @@ CMakeFiles/kcp_chat_client.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp
 CMakeFiles/kcp_chat_client.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp.h
 
 CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/client/ChatClient.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/KcpSession.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/KcpSessionFactory.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../third_party/kcp/ikcp.h
 CMakeFiles/kcp_chat_client.dir/src/client/ChatClient.cpp.o: ../src/client/ChatClient.cpp
 
 CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/client/ChatClient.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/CommandRouter.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/KcpSession.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/KcpSessionFactory.hpp
 CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/NetworkTransport.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/Session.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../include/common/Singleton.hpp
+CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../third_party/kcp/ikcp.h
 CMakeFiles/kcp_chat_client.dir/src/client_main.cpp.o: ../src/client_main.cpp
 
 CMakeFiles/kcp_chat_client.dir/src/common/CommandRouter.cpp.o: ../include/common/CommandRouter.hpp

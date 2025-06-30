@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhuzewen/share/KCP_Project
+CMAKE_SOURCE_DIR = /samba_share/KCP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhuzewen/share/KCP_Project/build
+CMAKE_BINARY_DIR = /samba_share/KCP_Project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kcp.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/kcp.dir/flags.make
 
 CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o: CMakeFiles/kcp.dir/flags.make
 CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o: ../third_party/kcp/ikcp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o   -c /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o   -c /samba_share/KCP_Project/third_party/kcp/ikcp.c
 
 CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c > CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /samba_share/KCP_Project/third_party/kcp/ikcp.c > CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.i
 
 CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zhuzewen/share/KCP_Project/third_party/kcp/ikcp.c -o CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /samba_share/KCP_Project/third_party/kcp/ikcp.c -o CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.s
 
 CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o.requires:
 
@@ -91,7 +91,7 @@ kcp_EXTERNAL_OBJECTS =
 libkcp.a: CMakeFiles/kcp.dir/third_party/kcp/ikcp.c.o
 libkcp.a: CMakeFiles/kcp.dir/build.make
 libkcp.a: CMakeFiles/kcp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhuzewen/share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libkcp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/samba_share/KCP_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libkcp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kcp.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kcp.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/kcp.dir/clean:
 .PHONY : CMakeFiles/kcp.dir/clean
 
 CMakeFiles/kcp.dir/depend:
-	cd /home/zhuzewen/share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build /home/zhuzewen/share/KCP_Project/build/CMakeFiles/kcp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /samba_share/KCP_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /samba_share/KCP_Project /samba_share/KCP_Project /samba_share/KCP_Project/build /samba_share/KCP_Project/build /samba_share/KCP_Project/build/CMakeFiles/kcp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kcp.dir/depend
 

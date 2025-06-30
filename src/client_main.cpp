@@ -10,9 +10,9 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    ChatClient client("127.0.0.1", 7654);
+    ChatClient client("192.168.30.14", 7654);
     cout << "client main test" << endl;
     client.connect();
-
+    client.run();
     return 0;
 }

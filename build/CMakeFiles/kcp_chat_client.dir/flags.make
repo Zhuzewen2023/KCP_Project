@@ -7,11 +7,11 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/zhuzewen/share/KCP_Project/include -I/home/zhuzewen/share/KCP_Project/include/client -I/home/zhuzewen/share/KCP_Project/include/server -I/home/zhuzewen/share/KCP_Project/include/common -I/home/zhuzewen/share/KCP_Project/third_party/kcp 
+C_INCLUDES = -I/samba_share/KCP_Project/include -I/samba_share/KCP_Project/include/client -I/samba_share/KCP_Project/include/server -I/samba_share/KCP_Project/include/common -I/samba_share/KCP_Project/third_party/kcp 
 
 CXX_FLAGS =   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zhuzewen/share/KCP_Project/include -I/home/zhuzewen/share/KCP_Project/include/client -I/home/zhuzewen/share/KCP_Project/include/server -I/home/zhuzewen/share/KCP_Project/include/common -I/home/zhuzewen/share/KCP_Project/third_party/kcp 
+CXX_INCLUDES = -I/samba_share/KCP_Project/include -I/samba_share/KCP_Project/include/client -I/samba_share/KCP_Project/include/server -I/samba_share/KCP_Project/include/common -I/samba_share/KCP_Project/third_party/kcp 
 
