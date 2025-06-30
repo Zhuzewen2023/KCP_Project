@@ -4,7 +4,7 @@
 
 using namespace std;
 
-std::shared_ptr<ISession> KcpSessionManager::get_session(const sockaddr_in& addr) {
+std::shared_ptr<ISession> KcpSessionManager::get_session(INetworkTransport *transport,  sockaddr_in& addr) {
     std::lock_guard<std::mutex> lock(mutex_);
     std::string key = addr_to_string(addr);
     cout << "get session key: " << key << endl;
@@ -12,6 +12,7 @@ std::shared_ptr<ISession> KcpSessionManager::get_session(const sockaddr_in& addr
     if (it == sessions_.end()) {
         auto session = std::make_shared<KcpSession>(addr);
         cout << "create session key: " << key << endl;
+        session->set_transport(transport);
         sessions_[key] = session;
         return session;
     }

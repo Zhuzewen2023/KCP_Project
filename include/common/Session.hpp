@@ -33,7 +33,7 @@ class ISession
 {
 protected:
     std::unique_ptr<ISessionState> state_;
-    std::unique_ptr<INetworkTransport> transport_;
+    INetworkTransport* transport_;
     std::string name_;
     // std::shared_ptr<Room> room_;
 public:
@@ -46,6 +46,7 @@ public:
     virtual std::string get_name() = 0;
     // virtual std::shared_ptr<Room> get_room() = 0;
     virtual void send_raw(const std::vector<uint8_t>& msg) = 0;
+    virtual std::pair<sockaddr_in, std::vector<uint8_t>> receive_raw() = 0;
     virtual ~ISession() = default;
 };
 

@@ -27,7 +27,12 @@ last_update_time_(static_cast<uint32_t>(std::chrono::duration_cast<std::chrono::
 
 }
 
-
+void KcpSession::set_transport(INetworkTransport *transport)
+{
+    if(transport){
+        transport_ = transport;
+    }
+}
 void KcpSession::set_state(std::unique_ptr<ISessionState> state)
 {
     state_ = std::move(state);
@@ -49,6 +54,14 @@ void KcpSession::send_raw(const std::vector<uint8_t>& data)
     if(transport_){
         transport_->send(client_addr_, data);
     }
+}
+
+std::pair<sockaddr_in, std::vector<uint8_t>> KcpSession::receive_raw()
+{
+    if(transport_){
+        return transport_->receive();
+    }
+    return std::make_pair(sockaddr_in{}, std::vector<uint8_t>{});
 }
 
 void KcpSession::process_packet(const std::vector<uint8_t>& packet)

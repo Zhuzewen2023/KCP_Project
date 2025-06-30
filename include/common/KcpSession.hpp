@@ -14,12 +14,15 @@ public:
     void handle_msg(const std::string& msg) override;
     void send(const std::string& msg) override;
     void send_raw(const std::vector<uint8_t>& msg) override;
+    std::pair<sockaddr_in, std::vector<uint8_t>> receive_raw() override;
+    void set_transport(INetworkTransport *transport) override;
     std::string get_name() override;
     void set_name(const std::string& name) override;
     // void set_room(std::shared_ptr<Room> room) override;
     void process_packet(const std::vector<uint8_t>& packet) override;
-private:
+
     void update_kcp(); // update kcp session
+private:
     ikcpcb *kcp_ = nullptr; // kcp session
     struct sockaddr_in client_addr_;
     uint32_t last_update_time_ = 0;

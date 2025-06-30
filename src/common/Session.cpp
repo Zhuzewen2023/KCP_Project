@@ -48,6 +48,7 @@ void AuthenticatedState::handle_msg(ISession& session, const std::string& msg)
     if(msg[0] == '/'){
         CommandRouter::get_instance().execute(session, msg);
     }else{
+        session.send(msg);
         // session.get_room().broadcast(msg, session);
     }
 }
@@ -57,6 +58,7 @@ void UnauthenticatedState::handle_msg(ISession& session, const std::string& msg)
     if(msg.find("/auth ") == 0){
         session.set_state(std::make_unique<AuthenticatedState>());
     }else{
-        session.send("You are not authenticated");
+        session.send("WARNING:You are not authenticated\n");
+        session.send(msg);
     }
 }
