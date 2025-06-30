@@ -29,7 +29,7 @@ static std::string addr_to_string(const sockaddr_in& addr)
 class KcpSessionManager : public ISessionManager, public Singleton<KcpSessionManager> 
 {
 public:
-    std::shared_ptr<ISession> get_session(INetworkTransport* transport, const sockaddr_in& addr) override;
+    std::shared_ptr<ISession> get_session(INetworkTransport* transport, sockaddr_in& addr) override;
 private:
     
 };
