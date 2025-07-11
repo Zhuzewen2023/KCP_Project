@@ -5,11 +5,12 @@ project(KCP_Chat_Server VERSION 1.0.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+#CMAKE_BINARY_DIR是运行cmake命令的目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_library(kcp STATIC third_party/kcp/ikcp.c)
 
-
+#CMAKE_SOURCE_DIR包含项目最顶层CMakeLists.txt的目录
 include_directories(${CMAKE_SOURCE_DIR}/include
                     ${CMAKE_SOURCE_DIR}/include/client
                     ${CMAKE_SOURCE_DIR}/include/server
